@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"adcwithtimer_mx\startup_stm32f407xx.o"
+"adcwithtimer_mx\stm32f4xx_hal_msp.o"
+"adcwithtimer_mx\stm32f4xx_it.o"
+"adcwithtimer_mx\main.o"
+"adcwithtimer_mx\system_stm32f4xx.o"
+"adcwithtimer_mx\stm32f4xx_hal_gpio.o"
+"adcwithtimer_mx\stm32f4xx_hal_flash_ramfunc.o"
+"adcwithtimer_mx\stm32f4xx_hal_pwr.o"
+"adcwithtimer_mx\stm32f4xx_hal_rcc_ex.o"
+"adcwithtimer_mx\stm32f4xx_hal_dma.o"
+"adcwithtimer_mx\stm32f4xx_hal_cortex.o"
+"adcwithtimer_mx\stm32f4xx_hal.o"
+"adcwithtimer_mx\stm32f4xx_hal_rcc.o"
+"adcwithtimer_mx\stm32f4xx_hal_adc_ex.o"
+"adcwithtimer_mx\stm32f4xx_hal_dma_ex.o"
+"adcwithtimer_mx\stm32f4xx_hal_pwr_ex.o"
+"adcwithtimer_mx\stm32f4xx_hal_tim_ex.o"
+"adcwithtimer_mx\stm32f4xx_hal_flash_ex.o"
+"adcwithtimer_mx\stm32f4xx_hal_adc.o"
+"adcwithtimer_mx\stm32f4xx_hal_flash.o"
+"adcwithtimer_mx\stm32f4xx_hal_tim.o"
+--library_type=microlib --strict --scatter "ADCwithTimer_mx\ADCwithTimer_mx.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADCwithTimer_mx.map" -o ADCwithTimer_mx\ADCwithTimer_mx.axf
